@@ -1,0 +1,133 @@
+.footer{
+    padding: 64px 0px;
+    &__list{
+        display: flex;
+        justify-content:space-between;
+        align-items:start;
+        &-item{
+            display: flex;
+            flex-direction:column;
+            gap:16px;
+        }
+        &-title{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+            color:$blokc;
+        }
+        &-link{
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19.07px;
+            text-align: left;
+            color:$green;
+        }
+    }
+    &__nav{
+        padding:48px 0px;
+        &-title{
+            padding-bottom:16px;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+            color:$blokc;
+        }
+        &-box{
+            width:95%;
+            display: flex;
+            flex-wrap: wrap;
+            gap:16px;
+        }
+        &-link{
+            padding:4px 10px;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: left;
+            color:$blokc;
+            background:#F5F5F5;
+            border-radius:12px;
+        }
+    }
+    &__bottom{
+        &-link{
+            // width: 100%;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19.07px;
+            text-align: left;
+            color:$blokc;
+        }
+    }
+}
+@media screen and (max-width:750px){
+    .footer{
+        &__list{
+            &-title{
+                font-size:15px;
+            }
+            &-link{
+                font-size:11px;
+            }
+        }
+        &__nav{
+            &-link{
+                font-size:10px;
+            }
+        }
+        &__bottom{
+            &-link{
+                font-size:10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:630px){
+    .footer{
+        .container{
+            padding:0px 20px;
+        }
+        &__list{
+            flex-wrap: wrap;
+            &-item{
+                width:50%;
+                padding-bottom:20px;
+            }
+        }
+    }
+}
+@media screen and (max-width:414px){
+    .footer{
+        &__list{
+            &-item{
+                width: 100%;
+            }
+            &-title{
+                text-align:center;
+            }
+            &-link{
+                text-align:center;
+            }
+        }
+        &__nav{
+            &-title{
+                text-align:center;
+            }
+            &-box{
+                justify-content:center;
+            }
+        }
+        &__bottom{
+            &-link{
+                text-align:center;
+            }
+        }
+    }
+}

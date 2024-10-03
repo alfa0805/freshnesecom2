@@ -1,0 +1,103 @@
+.section{
+    .container{
+        position: relative;
+    }
+    &__img{
+        position: absolute;
+        top: 170px;
+        left:0px;
+    }
+    &__pic{
+        position: absolute;
+        top: 170px;
+        right:0px;
+    }
+    &__menu{
+        padding-top:40px;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        &-title{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+            color:$blokc;
+        }
+        &-text{
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 22.5px;
+            text-align: left;
+            color:$blokc;
+        }
+        &-span{
+            padding-left:3px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 22.5px;
+            text-align: left;
+            color:$green; 
+        }
+    }
+    &__wrap{
+        padding:60px 0px;
+        display: flex;
+        align-items: start;
+        justify-content:center;
+        gap: 30px;
+        flex-wrap: wrap;
+        &-box{
+            width:369px;
+            padding: 0px 32px;
+            border:2px solid $dark;
+            border-radius:12px;
+            position: relative;
+        }
+        &-text{
+            padding: 24px 0px;
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 22.5px;
+            text-align: center;
+            color:$blokc;
+        }
+        &-subtext{
+            padding-bottom: 40px;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: center;
+            color:$darkgrey;
+        }
+        &-img{
+            position: absolute;
+            bottom:-22px;
+            left:150px;
+        }
+    }
+}
+@media screen and (max-width:630px){
+    .section{
+        .container{
+            padding: 0px 20px;
+        }
+    }
+}
+@media screen and (max-width:414px){
+    .section{
+        &__wrap{
+            // &-box{
+            //     position: none;
+            // }
+            &-img{
+                display: none;
+            }
+        }
+    }
+}

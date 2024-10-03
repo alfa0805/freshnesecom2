@@ -1,0 +1,187 @@
+.sidebar{
+    &__menu{
+        padding-top:40px;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        &-title{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+            color:$blokc;
+        }
+        &-text{
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 22.5px;
+            text-align: left;
+            color:$blokc;
+        }
+        &-span{
+            padding-left:3px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 22.5px;
+            text-align: left;
+            color:$green; 
+        }
+    }
+    &__wrap{
+        padding: 50px 0px;
+        // display: flex;
+        // justify-content:space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:20px;
+        flex-wrap: wrap;
+        &-block{
+            width: 100%;
+            border:2px solid $darkgrey;
+            border-radius:12px;
+            padding: 16px;
+            position: relative;
+        }
+        &-subtext{
+            font-family: Poppins;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: left;
+            color:$green;
+            background:$dark;
+            border-radius:10px;
+            padding: 0.5px 2px;
+            position:absolute;
+            z-index: 1;
+            top:22px;
+            left: 22px;
+
+        }
+        &-img{
+            width: 100%;
+        }
+        &-title{
+            padding-top:16px;
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 22.5px;
+            text-align: left;
+            color:$blokc;
+        }
+        &-text{
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16.34px;
+            text-align: left;
+            color:$darkgrey;
+        }
+        &-number{
+            padding-top: 21px;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+            color:$blokc;
+        }
+        &-subnumber{
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: left;
+            color:$darkgrey;
+        }
+        &-btn{
+            padding:6px 12px;
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 22.5px;
+            text-align: left;
+            color:$white;
+            background:$green;
+            border:2px solid #46760A;
+            border-radius:12px;
+            position: absolute;
+            bottom:20px;
+            right:20px;
+        }
+    }
+}
+@media screen and (max-width:1020px){
+    .sidebar{
+        &__wrap{
+            grid-template-columns: 1fr 1fr 1fr; 
+            flex-wrap: wrap;
+            &-btn{
+                font-size:11px;
+                padding:4px 8px;
+            }
+        }
+    }
+}
+@media screen and (max-width:815px){
+    .sidebar{
+        &__wrap{
+            grid-template-columns: 1fr 1fr; 
+            &-btn{
+                font-size:11px;
+                padding:4px 8px;
+            }
+        }
+    }
+}
+@media screen and (max-width:630px){
+    .sidebar{
+        .container{
+            padding: 0px 20px;
+        }
+        &__wrap{
+            grid-template-columns: 1fr;
+            &-block{
+                width: 100%;
+                display: flex;
+                align-items:start;
+            }
+            &-title{
+                padding-top: 0;
+            }
+            &-btn{
+                padding:4px 8px;
+                font-size: 10px;
+            }
+            &-img{
+                width: 45%;
+                height: 100%;
+            }
+            &-span{
+                padding-left: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width:414px){
+    .sidebar{
+        &__wrap{
+            &-block{
+                flex-direction: column;
+            }
+            &-img{
+                width: 100%;
+            }
+            &-title{
+                padding-top: 16px;
+            }
+            &-span{
+                padding-left: 0px;
+            }
+        }
+    }
+}
